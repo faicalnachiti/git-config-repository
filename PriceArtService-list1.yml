@@ -1,0 +1,36 @@
+#Application Config 
+application:
+ listino: 1
+
+#==========================================================================================================
+# Actuator Parameters
+#==========================================================================================================
+
+management:
+  info:
+    env:
+      enabled: true
+    git:
+      enabled: true
+      mode: full
+  endpoint:
+   health:
+      show-details: WHEN-AUTORIZED
+  endpoints:
+     web:
+      exposure:
+        include: health,info,metrics
+        
+#==========================================================================================================
+# Actuator  info
+#==========================================================================================================
+
+info:
+  assistenza:
+     nome: Faical NACHITI
+     mail: nachiti3@gmail.Com
+     telefono: 334-12345678
+     orario: 9-20
+  nome:
+     nome-app: PriceArt Web Service - Autenticazione OAUTH2 Keycloak
+  profilo: GitHub
